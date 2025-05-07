@@ -60,12 +60,12 @@ function updateStatus() {
 
     //　営業時間内の表示 
     if(isOpen(now, openHour, closeHour)){
-        statusElem.textContent="只今営業中です";
+        statusElem.textContent="ただいま営業中です";
         tooltipElem.textContent=`あと ${hours}時間 ${minutes}分で閉店`;
         statusElem.style.color = '#599594';
     // 営業時間外の表示
     }else{
-        statusElem.textContent="只今営業時間外です";
+        statusElem.textContent="ただいま営業時間外です";
         tooltipElem.textContent=`あと ${hours}時間 ${minutes}分で開店`;
         statusElem.style.color = '#cb452a';
   }
